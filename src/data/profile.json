@@ -1,0 +1,133 @@
+{
+  "phrases": [
+    "Hi! I am Rohit Nandi.",
+    "A Senior Software Developer.",
+    "How may I help you?"
+  ],
+  "bio": "9 years of crafting elegant solutions to complex problems",
+  "contact": {
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "email": "contact@example.com"
+  },
+  "skills": [
+    {
+      "icon": "Braces",
+      "title": "Frontend Mastery",
+      "description": "React • Vue • Angular • TypeScript • Modern CSS",
+      "color": "from-cyan-500/20 to-cyan-500/5"
+    },
+    {
+      "icon": "Server",
+      "title": "Backend Expertise",
+      "description": "Java • Spring • Node.js • Python • Microservices",
+      "color": "from-purple-500/20 to-purple-500/5"
+    },
+    {
+      "icon": "Database",
+      "title": "Database & Cloud",
+      "description": "SQL • NoSQL • AWS • Azure • Kafka",
+      "color": "from-emerald-500/20 to-emerald-500/5"
+    },
+    {
+      "icon": "Cpu",
+      "title": "AI & DevOps",
+      "description": "Machine Learning • Docker • Kubernetes",
+      "color": "from-rose-500/20 to-rose-500/5"
+    }
+  ],
+  "experiences": [
+    {
+      "year": "Feb 2024 - Present",
+      "role": "Senior Consultant App Development",
+      "company": "Geektrust",
+      "description": "Leading service registry implementation, Spring Cloud Config integration, and codebase modularization. Developed 40+ REST APIs with 90% test coverage. Reduced batch processing time by 99% using Java 21 virtual threads.",
+      "icon": "Braces",
+      "iconColor": "text-indigo-400"
+    },
+    {
+      "year": "May 2023 - Feb 2024",
+      "role": "Associate Principal Engineer",
+      "company": "Muthoot FinCorp. One",
+      "description": "Led Digital Gold Backend team, implemented new features increasing user engagement by 30%. Redesigned Coupon engine improving redemption rates by 40%. Reduced API latency by 80%.",
+      "icon": "Code2",
+      "iconColor": "text-purple-400"
+    },
+    {
+      "year": "Sep 2022 - May 2023",
+      "role": "Backend Development Engineer",
+      "company": "Geektrust",
+      "description": "Engineered microservices for Kafka data processing, implemented event-driven updates, and managed system stability under 90,000 requests per second.",
+      "icon": "Server",
+      "iconColor": "text-emerald-400"
+    },
+    {
+      "year": "Nov 2021 - Jul 2022",
+      "role": "Prototype Developer",
+      "company": "Rewoke",
+      "description": "Developed knowledge repository and clustering model for improved information retrieval. Created regression model showing 60% increase in lead conversions.",
+      "icon": "Database",
+      "iconColor": "text-blue-400"
+    },
+    {
+      "year": "Dec 2017 - Nov 2021",
+      "role": "AI Programmer",
+      "company": "Decisive.ai",
+      "description": "Implemented microservices architecture for ML components, led experiments with new algorithms, and developed interactive training dashboards.",
+      "icon": "Cpu",
+      "iconColor": "text-rose-400"
+    }
+  ],
+  "education": [
+    {
+      "year": "2023",
+      "degree": "Software Development & Problem Solving",
+      "institution": "Scaler",
+      "description": "Specialized in DSA, LLD, HLD, Java Backend, and more. Top 10% performer with 500+ problems solved.",
+      "icon": "Code2",
+      "iconColor": "text-blue-400"
+    },
+    {
+      "year": "2015",
+      "degree": "B.Tech",
+      "institution": "Heritage Institute of Technology Kolkata",
+      "description": "Graduated with 8.12 CGPA",
+      "icon": "GraduationCap",
+      "iconColor": "text-green-400"
+    }
+  ],
+  "awards": [
+    {
+      "year": "2023",
+      "title": "Tech Craft Hackathon Runner-up",
+      "organization": "Intra-org Hackathon",
+      "description": "Implemented POC for Intelligent Lead Aggregator platform",
+      "icon": "Trophy",
+      "iconColor": "text-yellow-400"
+    },
+    {
+      "year": "2017",
+      "title": "Aptean GEM Award",
+      "organization": "Aptean",
+      "description": "Recognized for proactive work and research contributions",
+      "icon": "Trophy",
+      "iconColor": "text-orange-400"
+    },
+    {
+      "year": "2015",
+      "title": "Infosys Top Performer",
+      "organization": "Infosys Training",
+      "description": "Scored 93% aggregate, 1st in Java stream",
+      "icon": "Trophy",
+      "iconColor": "text-purple-400"
+    },
+    {
+      "year": "2014",
+      "title": "Robotics Finalist",
+      "organization": "IIT Kharagpur Technical Fest",
+      "description": "Finalist in Inspiral-On manual robotics event",
+      "icon": "Trophy",
+      "iconColor": "text-red-400"
+    }
+  ]
+}
