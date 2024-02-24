@@ -2,6 +2,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import TimelineSection from '../components/TimelineSection';
 import SkillCard from '../components/SkillCard';
+import ScrollIndicator from '../components/ScrollIndicator';
 import profileData from '../data/profile.json';
 
 export default function About() {
@@ -150,6 +151,9 @@ export default function About() {
           visibleItems={visibleAwards}
           section="awards"
         />
+
+        {/* Scroll Indicator */}
+        <ScrollIndicator />
       </div>
     </div>
   );
