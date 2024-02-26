@@ -91,7 +91,7 @@ export default function About() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                 {typedText}<span className={`${showCursor ? 'opacity-100' : 'opacity-0'}`}>_</span>
               </h1>
-              <p className="text-gray-300 mb-4">{profileData.bio}</p>
+              <p className="text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: profileData.bio }}></p>
               <div className="flex space-x-4 mt-6">
                 <a
                   href={profileData.contact.github}
