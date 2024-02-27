@@ -10,7 +10,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log(formData);
   };
 
@@ -54,7 +53,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <div className="min-h-screen pt-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-4xl font-bold text-center mb-12">Get in Touch</h1>
 
@@ -65,21 +64,21 @@ export default function Contact() {
               {contactInfo.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-gray-800/50 border border-gray-700 p-6 rounded-xl hover:shadow-lg hover:shadow-indigo-500/10 transition-all duration-300"
+                  className="bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 p-6 rounded-xl hover:shadow-lg hover:shadow-indigo-500/10 transition-all duration-300"
                 >
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-indigo-500/20 text-indigo-400 mb-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 mb-4">
                     {item.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
+                  <h3 className="text-lg font-semibold mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-300">{item.content}</p>
+                  <p className="text-gray-600 dark:text-gray-300">{item.content}</p>
                 </div>
               ))}
             </div>
 
             {/* Map */}
-            <div className="bg-gray-800/50 border border-gray-700 rounded-xl overflow-hidden">
+            <div className="bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
               <iframe
                 src={contactInfo[2].href}
                 width="100%"
@@ -102,8 +101,8 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="group"
                 >
-                  <div className="bg-gray-800/50 border border-gray-700 p-4 rounded-xl group-hover:shadow-lg group-hover:shadow-indigo-500/10 transition-all duration-300">
-                    <div className="text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                  <div className="bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 p-4 rounded-xl group-hover:shadow-lg group-hover:shadow-indigo-500/10 transition-all duration-300">
+                    <div className="text-indigo-600 dark:text-indigo-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-300 transition-colors">
                       {link.icon}
                     </div>
                   </div>
@@ -113,12 +112,12 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800/50 border border-gray-700 p-8 rounded-xl">
+          <div className="bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 p-8 rounded-xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
                 >
                   Name
                 </label>
@@ -129,7 +128,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white"
+                  className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900 dark:text-white"
                   required
                 />
               </div>
@@ -137,7 +136,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
                 >
                   Email
                 </label>
@@ -148,7 +147,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white"
+                  className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900 dark:text-white"
                   required
                 />
               </div>
@@ -156,7 +155,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-300 mb-1"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
                 >
                   Message
                 </label>
@@ -167,7 +166,7 @@ export default function Contact() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   rows={6}
-                  className="w-full px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white"
+                  className="w-full px-4 py-2 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900 dark:text-white"
                   required
                 ></textarea>
               </div>

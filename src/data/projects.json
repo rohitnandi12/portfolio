@@ -1,0 +1,45 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "E-Commerce Platform",
+        "description": "A full-featured e-commerce platform with real-time inventory management and payment processing.",
+        "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=1280",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+        "github": "https://github.com",
+        "live": "https://example.com",
+        "slides": [
+          "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=1280",
+          "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1280",
+          "https://images.unsplash.com/photo-1557821550-a1e1f3d44b67?auto=format&fit=crop&q=80&w=1280"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "AI-Powered Analytics Dashboard",
+        "description": "Real-time analytics dashboard with machine learning predictions for business metrics.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1280",
+        "technologies": ["Python", "TensorFlow", "React", "AWS"],
+        "github": "https://github.com",
+        "slides": [
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1280",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1280",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1280"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Cloud Infrastructure Manager",
+        "description": "Enterprise tool for managing and monitoring cloud resources across multiple providers.",
+        "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1280",
+        "technologies": ["TypeScript", "Docker", "Kubernetes", "Azure"],
+        "github": "https://github.com",
+        "live": "https://example.com",
+        "slides": [
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1280",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1280",
+          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1280"
+        ]
+      }
+    ]
+}

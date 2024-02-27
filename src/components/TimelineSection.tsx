@@ -37,8 +37,8 @@ export default function TimelineSection({
   return (
     <div className="max-w-3xl mx-auto relative mb-16">
       <div className="flex items-center mb-8">
-        {renderIcon(sectionIcon, "h-6 w-6 text-indigo-400")}
-        <h2 className="text-3xl font-bold text-white ml-2">{title}</h2>
+        {renderIcon(sectionIcon, "h-6 w-6 text-indigo-600 dark:text-indigo-400")}
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white ml-2">{title}</h2>
       </div>
       
       <div className="absolute left-4 top-20 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 to-transparent"></div>
@@ -55,21 +55,21 @@ export default function TimelineSection({
                 : 'opacity-0 -translate-x-8'
             }`}
           >
-            <div className="absolute left-2 top-2 w-4 h-4 bg-indigo-400 rounded-full transform -translate-x-1/2 z-10"></div>
-            <div className="bg-gray-800/50 border border-gray-700 p-6 rounded-xl hover:shadow-lg hover:shadow-indigo-500/10 transition-shadow duration-300">
+            <div className="absolute left-2 top-2 w-4 h-4 bg-indigo-600 dark:bg-indigo-400 rounded-full transform -translate-x-1/2 z-10"></div>
+            <div className="bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 p-6 rounded-xl hover:shadow-lg hover:shadow-indigo-500/10 transition-shadow duration-300">
               <div className="flex items-center mb-2">
                 {renderIcon(item.icon, `h-6 w-6 ${item.iconColor}`)}
-                <span className="text-sm font-semibold text-indigo-400 ml-2">
+                <span className="text-sm font-semibold text-indigo-600 dark:text-indigo-400 ml-2">
                   {item.year}
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-white mt-1">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-1">
                 {item.role || item.degree || item.title}
               </h3>
-              <p className="text-indigo-300 font-medium">
+              <p className="text-indigo-600 dark:text-indigo-300 font-medium">
                 {item.company || item.institution || item.organization}
               </p>
-              <p className="text-gray-300 mt-2">{item.description}</p>
+              <p className="text-gray-600 dark:text-gray-300 mt-2">{item.description}</p>
             </div>
           </div>
         ))}

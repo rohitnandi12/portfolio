@@ -75,29 +75,29 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <div className="min-h-screen pt-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Terminal-like Hero Section */}
         <div className="mb-16">
-          <div className="bg-gray-800 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
-            <div className="bg-gray-900 px-4 py-2 flex items-center space-x-2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
+            <div className="bg-gray-100 dark:bg-gray-900 px-4 py-2 flex items-center space-x-2">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
-              <span className="text-gray-400 text-sm ml-2">~/portfolio/about</span>
+              <span className="text-gray-500 dark:text-gray-400 text-sm ml-2">~/portfolio/about</span>
             </div>
             <div className="p-6 font-mono">
-              <p className="text-green-400">$ whoami</p>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+              <p className="text-emerald-600 dark:text-emerald-400">$ whoami</p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
                 {typedText}<span className={`${showCursor ? 'opacity-100' : 'opacity-0'}`}>_</span>
               </h1>
-              <p className="text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: profileData.bio }}></p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4" dangerouslySetInnerHTML={{ __html: profileData.bio }}></p>
               <div className="flex space-x-4 mt-6">
                 <a
                   href={profileData.contact.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                 >
                   <Github className="h-6 w-6" />
                 </a>
@@ -105,13 +105,13 @@ export default function About() {
                   href={profileData.contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a
                   href={`mailto:${profileData.contact.email}`}
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                 >
                   <Mail className="h-6 w-6" />
                 </a>
