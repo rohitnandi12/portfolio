@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
-            <span className="font-bold text-xl text-gray-900 dark:text-white">DevPortfolio</span>
+            <span className="font-bold text-xl text-gray-900 dark:text-white">Rohit Nandi</span>
           </Link>
 
           {/* Desktop Navigation */}
